@@ -1,0 +1,12 @@
+{
+  "name": "ByteFix — Manutenção & Sites",
+  "short_name": "ByteFix",
+  "description": "Manutenção de computadores, criação de sites e chat bot no WhatsApp em São Luís – MA.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071A2E",
+  "theme_color": "#0A2540",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
