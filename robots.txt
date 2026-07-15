@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bytefix.vercel.app/sitemap.xml
+Sitemap: https://bytefix.net.br/sitemap.xml
