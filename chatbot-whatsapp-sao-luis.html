@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Bot de WhatsApp para Empresas em São Luís | ByteFix</title>
+    <meta
+      name="description"
+      content="Chat bot de atendimento no WhatsApp para empresas em São Luís. Atende 24h, anota pedidos, faz reservas e agendamentos automáticos. Configuração, publicação e treinamento inclusos."
+    />
+    <link rel="canonical" href="https://bytefix.net.br/chatbot-whatsapp-sao-luis.html" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="ByteFix" />
+    <meta name="theme-color" content="#0A2540" />
+    <meta name="geo.region" content="BR-MA" />
+    <meta name="geo.placename" content="São Luís" />
+    <meta name="geo.position" content="-2.53073;-44.30684" />
+    <meta name="ICBM" content="-2.53073, -44.30684" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="ByteFix" />
+    <meta property="og:title" content="Chat Bot de WhatsApp para Empresas em São Luís | ByteFix" />
+    <meta
+      property="og:description"
+      content="Um atendente virtual no WhatsApp que responde na hora, anota pedidos e agenda sozinho — 24 horas por dia."
+    />
+    <meta property="og:url" content="https://bytefix.net.br/chatbot-whatsapp-sao-luis.html" />
+    <meta property="og:image" content="https://bytefix.net.br/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="ByteFix — chat bot de atendimento no WhatsApp em São Luís"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chat Bot de WhatsApp para Empresas em São Luís | ByteFix" />
+    <meta
+      name="twitter:description"
+      content="Um atendente virtual no WhatsApp que responde na hora, anota pedidos e agenda sozinho — 24 horas por dia."
+    />
+    <meta name="twitter:image" content="https://bytefix.net.br/og-image.jpg" />
+    <meta
+      name="twitter:image:alt"
+      content="ByteFix — chat bot de atendimento no WhatsApp em São Luís"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Chat bot de atendimento no WhatsApp",
+        "name": "Chat bot de WhatsApp para empresas em São Luís",
+        "description": "Chat bot de atendimento no WhatsApp que responde na hora, anota pedidos e faz reservas e agendamentos automáticos. Configuração, publicação e treinamento inclusos.",
+        "url": "https://bytefix.net.br/chatbot-whatsapp-sao-luis.html",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "ByteFix",
+          "image": "https://bytefix.net.br/og-image.jpg",
+          "url": "https://bytefix.net.br/",
+          "telephone": "+55-98-98189-8155",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São Luís",
+            "addressRegion": "MA",
+            "addressCountry": "BR"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": -2.53073, "longitude": -44.30684 }
+        },
+        "areaServed": { "@type": "City", "name": "São Luís" },
+        "offers": {
+          "@type": "Offer",
+          "price": "1499.00",
+          "priceCurrency": "BRL",
+          "availability": "https://schema.org/InStock",
+          "url": "https://bytefix.net.br/chatbot-whatsapp-sao-luis.html",
+          "description": "Chat bot de atendimento no WhatsApp: R$ 1.499 de adesão, com configuração, publicação e treinamento. Mensalidade a partir de R$ 79,99/mês para manter no ar."
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://bytefix.net.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Chat Bot de WhatsApp em São Luís",
+            "item": "https://bytefix.net.br/chatbot-whatsapp-sao-luis.html"
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --navy: #0a2540;
+        --navy2: #123a63;
+        --navy-deep: #071a2e;
+        --blue: #2e9be6;
+        --blue2: #4fc3f7;
+        --white: #ffffff;
+        --ice: #eaf3fb;
+        --gray: #9fb2c6;
+        --line: rgba(255, 255, 255, 0.1);
+        --radius: 18px;
+        --radius-sm: 12px;
+        --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+        --surface: linear-gradient(180deg, rgba(18, 58, 99, 0.72), rgba(10, 37, 64, 0.72));
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", system-ui, Arial, sans-serif;
+        background: var(--navy-deep);
+        color: var(--ice);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .container {
+        width: min(1180px, 92%);
+        margin: 0 auto;
+      }
+      section {
+        padding: 84px 0;
+      }
+      h1,
+      h2,
+      h3 {
+        line-height: 1.18;
+        letter-spacing: -0.02em;
+      }
+      .eyebrow {
+        color: var(--blue2);
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-size: 11.5px;
+        display: inline-block;
+        margin-bottom: 14px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        padding: 15px 26px;
+        border-radius: var(--radius-sm);
+        font-size: 15.5px;
+        letter-spacing: -0.01em;
+        cursor: pointer;
+        border: none;
+        transition: transform 0.25s var(--ease);
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, var(--blue2), var(--blue));
+        color: #04263f;
+        box-shadow: 0 16px 38px rgba(46, 155, 230, 0.35);
+      }
+      .btn-ghost {
+        border: 1px solid var(--line);
+        color: var(--ice);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(7, 26, 46, 0.86);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 14px 0;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        font-size: 21px;
+        letter-spacing: -0.02em;
+      }
+      .logo-mark {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+      }
+      .logo-mark svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .brand .fix {
+        color: var(--blue2);
+      }
+      .brand small {
+        display: block;
+        font-size: 8.5px;
+        letter-spacing: 0.18em;
+        color: var(--gray);
+        font-weight: 600;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        font-size: 14.5px;
+        font-weight: 500;
+      }
+      .nav-links a:hover {
+        color: var(--blue2);
+      }
+      .nav-links .btn:hover {
+        color: #04263f;
+      }
+      .crumb {
+        padding: 18px 0 0;
+        font-size: 13px;
+        color: var(--gray);
+      }
+      .crumb a:hover {
+        color: var(--blue2);
+      }
+      .hero {
+        padding: 54px 0 74px;
+        background:
+          radial-gradient(900px 420px at 78% -8%, rgba(46, 155, 230, 0.16), transparent 62%),
+          var(--navy-deep);
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 48px;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: clamp(30px, 4.6vw, 48px);
+        font-weight: 800;
+      }
+      .hero h1 span {
+        color: var(--blue2);
+      }
+      .hero p.lead {
+        color: var(--gray);
+        margin: 20px 0 30px;
+        font-size: 17px;
+      }
+      .hero-cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      /* mock de conversa */
+      .chat {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 18px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      }
+      .chat-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 16px;
+      }
+      .chat-av {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--blue2), var(--blue));
+        color: #04263f;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex: none;
+      }
+      .chat-top b {
+        display: block;
+        font-size: 14.5px;
+      }
+      .chat-top small {
+        color: #7ee0a0;
+        font-size: 12px;
+      }
+      .msg {
+        max-width: 82%;
+        padding: 10px 14px;
+        border-radius: 14px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+      .msg.cli {
+        background: rgba(255, 255, 255, 0.07);
+        border-top-left-radius: 4px;
+      }
+      .msg.bot {
+        background: linear-gradient(135deg, rgba(79, 195, 247, 0.22), rgba(46, 155, 230, 0.22));
+        border: 1px solid rgba(79, 195, 247, 0.3);
+        margin-left: auto;
+        border-top-right-radius: 4px;
+      }
+      .chat-foot {
+        color: var(--gray);
+        font-size: 11.5px;
+        text-align: center;
+        margin-top: 6px;
+      }
+      h2.title {
+        font-size: clamp(24px, 3.4vw, 36px);
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+      h2.title span {
+        color: var(--blue2);
+      }
+      .sub {
+        color: var(--gray);
+        max-width: 68ch;
+        margin-bottom: 36px;
+      }
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+      .g3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .g4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 26px;
+      }
+      .card h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+      }
+      .card p {
+        color: var(--gray);
+        font-size: 14.5px;
+      }
+      .num {
+        color: var(--blue2);
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+      }
+      .inc {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      .inc li {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        padding: 16px 18px;
+        font-size: 15px;
+      }
+      .inc li::before {
+        content: "✓";
+        color: var(--blue2);
+        font-weight: 800;
+        flex: none;
+      }
+      .pricebox {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 34px;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 34px;
+        align-items: center;
+      }
+      .pricebox .val {
+        font-size: clamp(34px, 5vw, 46px);
+        font-weight: 800;
+        color: var(--white);
+        letter-spacing: -0.03em;
+      }
+      .pricebox .pre {
+        color: var(--gray);
+        font-size: 14px;
+        display: block;
+      }
+      .pricebox .after {
+        color: var(--gray);
+        font-size: 12.5px;
+        margin-top: 12px;
+        display: block;
+      }
+      .pricebox .btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 16px;
+      }
+      .master-note {
+        margin-top: 22px;
+        border-left: 3px solid #7ee0a0;
+        padding: 4px 0 4px 16px;
+        color: var(--gray);
+        font-size: 14.5px;
+      }
+      .master-note b {
+        color: var(--ice);
+      }
+      .faq-item {
+        border-bottom: 1px solid var(--line);
+        padding: 20px 0;
+      }
+      .faq-item h3 {
+        font-size: 16.5px;
+        margin-bottom: 8px;
+        color: var(--white);
+      }
+      .faq-item p {
+        color: var(--gray);
+        font-size: 15px;
+      }
+      .band {
+        background: linear-gradient(135deg, var(--navy2), var(--navy));
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        text-align: center;
+      }
+      .band h2 {
+        font-size: clamp(24px, 3.4vw, 34px);
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+      .band p {
+        color: var(--gray);
+        margin-bottom: 24px;
+      }
+      footer {
+        background: var(--navy-deep);
+        padding: 56px 0 28px;
+        border-top: 1px solid var(--line);
+      }
+      .foot {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 40px;
+      }
+      .foot p {
+        color: var(--gray);
+        font-size: 14px;
+        margin-top: 14px;
+        max-width: 44ch;
+      }
+      .foot h5 {
+        font-size: 13px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--white);
+        margin-bottom: 16px;
+      }
+      .foot a:not(.brand) {
+        display: block;
+        color: var(--gray);
+        font-size: 14.5px;
+        margin-bottom: 10px;
+      }
+      .foot a:not(.brand):hover {
+        color: var(--blue2);
+      }
+      .soc {
+        display: flex !important;
+        align-items: center;
+        gap: 10px;
+      }
+      .soc svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--blue2);
+        flex: none;
+      }
+      .copy {
+        margin-top: 40px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        color: var(--gray);
+        font-size: 13px;
+        text-align: center;
+      }
+      .wa-float {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 60;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: #25d366;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+      }
+      .wa-float svg {
+        width: 32px;
+        height: 32px;
+        fill: #fff;
+      }
+      @media (max-width: 900px) {
+        .nav-links a:not(.btn) {
+          display: none;
+        }
+        .nav-links .btn {
+          padding: 11px 18px;
+          font-size: 14px;
+        }
+        .hero-grid,
+        .g3,
+        .g4,
+        .inc,
+        .pricebox,
+        .foot {
+          grid-template-columns: 1fr;
+        }
+        section {
+          padding: 60px 0;
+        }
+        .brand {
+          font-size: 18px;
+        }
+        .hero {
+          padding: 40px 0 56px;
+        }
+        .pricebox {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="/" class="brand"
+          ><span class="logo-mark" id="logoMark"></span
+          ><span>Byte<span class="fix">Fix</span><small>MANUTENÇÃO · SITES</small></span></a
+        >
+        <nav class="nav-links">
+          <a href="/">Início</a><a href="/#servicos">Serviços</a><a href="/#precos">Preços</a
+          ><a href="/#portfolio">Portfólio</a><a href="/#faq">Dúvidas</a
+          ><a class="btn btn-primary" id="ctaNav">Falar no WhatsApp</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container crumb">
+      <a href="/">Início</a> › <span>Chat Bot de WhatsApp em São Luís</span>
+    </div>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Automação · São Luís – MA</span>
+          <h1>Chat bot de atendimento no <span>WhatsApp</span></h1>
+          <p class="lead">
+            Cliente que espera resposta vai no concorrente. Um chat bot responde na hora — de
+            madrugada, no domingo, enquanto você está atendendo outra pessoa — anota o pedido, marca
+            o horário e só te passa a conversa quando precisa de você.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary price-cta" data-wa="Olá! Vim pela página de chat bot e quero entender como funciona para o meu negócio."
+              >Quero um chat bot</a
+            ><a class="btn btn-ghost" href="#precos">Ver preço</a>
+          </div>
+        </div>
+        <div class="chat">
+          <div class="chat-top">
+            <span class="chat-av">LS</span>
+            <span><b>Lanchonete Sabor &amp; Cia</b><small>online agora</small></span>
+          </div>
+          <div class="msg cli">Oi, ainda tá aberto? Queria 2 pizzas grandes</div>
+          <div class="msg bot">
+            Oi! Estamos sim, até 23h 🍕 Quais sabores você quer nas duas?
+          </div>
+          <div class="msg cli">Calabresa e portuguesa. Entrega na Cohab</div>
+          <div class="msg bot">
+            Fechado! 2 grandes (calabresa + portuguesa), entrega na Cohab. Total R$ 96,00 — saindo em
+            até 45 min. Confirma?
+          </div>
+          <p class="chat-foot">Exemplo ilustrativo de atendimento automático</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <span class="eyebrow">Por que ter um</span>
+        <h2 class="title">Ele trabalha <span>enquanto você dorme</span></h2>
+        <p class="sub">
+          E nunca perde um cliente por demora na resposta — que é o motivo número um de venda
+          perdida no WhatsApp.
+        </p>
+        <div class="grid g3">
+          <div class="card">
+            <h3>Atende 24 horas</h3>
+            <p>Responde na hora, de dia ou de madrugada, feriado e fim de semana.</p>
+          </div>
+          <div class="card">
+            <h3>Resposta instantânea</h3>
+            <p>Nada de cliente esperando. Menos espera, mais venda fechada.</p>
+          </div>
+          <div class="card">
+            <h3>Pedidos e reservas</h3>
+            <p>Anota pedidos, reserva mesas e faz agendamentos sozinho.</p>
+          </div>
+          <div class="card">
+            <h3>Mais faturamento</h3>
+            <p>Transforma cada conversa em pedido e não deixa venda escapar.</p>
+          </div>
+          <div class="card">
+            <h3>Direto no WhatsApp</h3>
+            <p>Funciona onde o seu cliente já está todos os dias — sem instalar nada.</p>
+          </div>
+          <div class="card">
+            <h3>Libera sua equipe</h3>
+            <p>Chega de responder as mesmas perguntas o dia inteiro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: rgba(255, 255, 255, 0.02); border-block: 1px solid var(--line)">
+      <div class="container">
+        <span class="eyebrow">O que está incluso</span>
+        <h2 class="title">Você não recebe só o <span>robô</span></h2>
+        <p class="sub">
+          Configurar um bot e entregar na mão de quem não sabe mexer não serve para nada. O
+          treinamento vai junto.
+        </p>
+        <ul class="inc">
+          <li>Chat bot de atendimento rodando no seu número de WhatsApp</li>
+          <li>Pedidos, reservas e agendamentos automáticos</li>
+          <li>Respostas montadas em cima do seu negócio, não um modelo genérico</li>
+          <li>Configuração e publicação — ele já entra no ar funcionando</li>
+          <li>Treinamento para você e sua equipe operarem sem depender de mim</li>
+          <li>Mensalidade a partir de R$ 79,99/mês para manter no ar e ajustar respostas</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="precos">
+      <div class="container">
+        <span class="eyebrow">Investimento</span>
+        <h2 class="title">Quanto <span>custa</span></h2>
+        <p class="sub">
+          Valor de referência. O orçamento final depende do tamanho do atendimento — e você sempre
+          aprova antes.
+        </p>
+        <div class="pricebox">
+          <div>
+            <h3 style="font-size: 21px; margin-bottom: 10px">Agente Chat (avulso)</h3>
+            <p style="color: var(--gray); font-size: 15px">
+              Só o chat bot, sem site nem artes. Adesão única, mais a mensalidade para manter o bot
+              no ar e respondendo.
+            </p>
+            <div class="master-note">
+              <b>Antes de fechar, leia isto:</b> o <b>Plano Master</b> sai por
+              <b>R$ 1.199 à vista</b> (ou 3x R$ 399) e inclui <b>chat bot + site + artes</b> para
+              redes sociais. Ou seja: é <b>mais barato que o agente sozinho</b> e você leva bem mais
+              coisa. Só faz sentido pegar o avulso se você já tem site e não quer o resto.
+              <a href="/#precos" style="color: var(--blue2); font-weight: 600">ver o Plano Master →</a>
+            </div>
+          </div>
+          <div>
+            <span class="pre">adesão</span>
+            <div class="val">R$ 1.499</div>
+            <span class="pre">única · + mensalidade</span>
+            <a class="btn btn-primary price-cta" data-wa="Olá! Quero só o Agente Chat avulso (R$ 1.499 de adesão). Pode me explicar como funciona?"
+              >Quero só o agente</a
+            >
+            <span class="after"
+              >Configuração, publicação e treinamento inclusos. Depois, mensalidade a partir de R$
+              79,99/mês para manter no ar.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: rgba(255, 255, 255, 0.02); border-block: 1px solid var(--line)">
+      <div class="container">
+        <span class="eyebrow">Como funciona</span>
+        <h2 class="title">Do primeiro contato ao <span>bot atendendo</span></h2>
+        <p class="sub">Sem enrolação e sem surpresa no meio do caminho.</p>
+        <div class="grid g4">
+          <div class="card">
+            <div class="num">01</div>
+            <h3>Você chama</h3>
+            <p>Manda uma mensagem contando qual é o negócio e o que o bot precisa resolver.</p>
+          </div>
+          <div class="card">
+            <div class="num">02</div>
+            <h3>Mapeio o atendimento</h3>
+            <p>A gente lista as perguntas que mais chegam e o que o bot deve fazer com cada uma.</p>
+          </div>
+          <div class="card">
+            <div class="num">03</div>
+            <h3>Configuro e publico</h3>
+            <p>Monto as respostas, conecto no seu WhatsApp e coloco pra rodar.</p>
+          </div>
+          <div class="card">
+            <div class="num">04</div>
+            <h3>Treino você</h3>
+            <p>Mostro como acompanhar as conversas e ajustar o que precisar no dia a dia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <span class="eyebrow">Dúvidas</span>
+        <h2 class="title">Perguntas <span>e respostas</span></h2>
+        <div style="margin-top: 26px">
+          <div class="faq-item">
+            <h3>Preciso trocar o meu número de WhatsApp?</h3>
+            <p>
+              Não. O bot roda no número que o seu cliente já conhece — o mesmo que está no cartão, na
+              placa e no Instagram. Trocar de número seria jogar fora todo contato que você já tem.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>E se o cliente quiser falar comigo, uma pessoa de verdade?</h3>
+            <p>
+              O bot passa a conversa pra você. Ele existe pra resolver o que é repetitivo — horário,
+              preço, cardápio, agendamento — e liberar o seu tempo pro que realmente precisa de
+              gente.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Por que tem mensalidade?</h3>
+            <p>
+              Porque o bot não é um objeto, é um serviço rodando: ele precisa ficar no ar, conectado
+              e com as respostas atualizadas quando você muda preço, horário ou cardápio. A
+              mensalidade a partir de R$ 79,99/mês cobre isso e o suporte.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>O agente avulso não é mais caro que o pacote completo?</h3>
+            <p>
+              É — e por isso a gente avisa em vez de esconder. O Plano Master sai por R$ 1.199 à
+              vista com chat bot, site e artes; o agente sozinho é R$ 1.499. O avulso só compensa se
+              você já tem site e quer mesmo só o bot.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Serve para o meu tipo de negócio?</h3>
+            <p>
+              Se você atende cliente pelo WhatsApp e responde as mesmas perguntas todo dia, serve.
+              Funciona bem em lanchonete, pizzaria, barbearia, salão, clínica, academia e loja — em
+              qualquer lugar que tenha pedido, reserva ou agendamento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container">
+        <h2>Quer parar de perder venda por demora?</h2>
+        <p>Orçamento sem compromisso. Você só paga se aprovar.</p>
+        <a class="btn btn-primary price-cta" data-wa="Olá! Vim pela página de chat bot da ByteFix e quero um orçamento."
+          >Falar no WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="foot">
+          <div>
+            <a href="/" class="brand"
+              ><span class="logo-mark" id="logoMark2"></span
+              ><span>Byte<span class="fix">Fix</span></span></a
+            >
+            <p>
+              Manutenção de impressoras, notebooks e desktops e criação de sites profissionais.
+              Tecnologia de confiança para você e para o seu negócio.
+            </p>
+          </div>
+          <div>
+            <h5>Serviços</h5>
+            <a href="/criacao-de-sites-sao-luis.html">Criação de sites</a
+            ><a href="/chatbot-whatsapp-sao-luis.html">Chat bot de WhatsApp</a
+            ><a href="/manutencao-de-computadores-sao-luis.html">Manutenção de computadores</a
+            ><a href="/demos.html">Exemplos de sites</a><a href="/#precos">Preços</a>
+          </div>
+          <div>
+            <h5>Contato</h5>
+            <a id="footWa" class="soc"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                /></svg
+              ><span>(98) 98189-8155</span></a
+            ><a id="footIg" class="soc" target="_blank" rel="noopener"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.6 5.6 0 00-2.02 1.32A5.6 5.6 0 00.8 3.97c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.6 5.6 0 001.32 2.02 5.6 5.6 0 002.02 1.32c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.85 5.85 0 003.34-3.34c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.6 5.6 0 00-1.32-2.02A5.6 5.6 0 0020.03.8c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0z"
+                />
+                <path
+                  d="M12 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84m0 10.16A4 4 0 1116 12a4 4 0 01-4 4"
+                />
+                <circle cx="18.41" cy="5.59" r="1.44" /></svg
+              ><span id="igHandle">@bytefix</span></a
+            ><a id="footCity" class="soc"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"
+                /></svg
+              ><span id="cityTxt">São Luís – MA</span></a
+            ><a class="soc"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2a10 10 0 100 20 10 10 0 000-20zm4 11h-5a1 1 0 01-1-1V7a1 1 0 012 0v4h4a1 1 0 010 2z"
+                /></svg
+              ><span>Seg a Sex, 9h às 18h</span></a
+            >
+          </div>
+        </div>
+        <div class="copy">
+          © <span id="year"></span> ByteFix · Manutenção &amp; Sites. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <a class="wa-float" id="waFloat" aria-label="WhatsApp"
+      ><svg viewBox="0 0 24 24">
+        <path
+          d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+        /></svg
+    ></a>
+
+    <script>
+      const CONFIG = { whatsapp: "5598981898155", cidade: "São Luís – MA", instagram: "lbytefixl" };
+      var waMsg = encodeURIComponent("Olá! Vim pelo site da ByteFix e gostaria de um orçamento.");
+      var waLink = "https://wa.me/" + CONFIG.whatsapp + "?text=" + waMsg;
+      ["ctaNav", "waFloat"].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.href = waLink;
+      });
+      document.querySelectorAll(".price-cta").forEach(function (a) {
+        var m = a.getAttribute("data-wa");
+        a.href = m ? "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(m) : waLink;
+      });
+      var fw = document.getElementById("footWa");
+      if (fw) fw.href = waLink;
+      var ig = document.getElementById("footIg");
+      if (ig) ig.href = "https://instagram.com/" + CONFIG.instagram;
+      var igh = document.getElementById("igHandle");
+      if (igh) igh.textContent = "@" + CONFIG.instagram;
+      var ct = document.getElementById("cityTxt");
+      if (ct) ct.textContent = CONFIG.cidade;
+      var yr = document.getElementById("year");
+      if (yr) yr.textContent = new Date().getFullYear();
+      var LOGO = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="nav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A2540"/><stop offset="1" stop-color="#123A63"/></linearGradient><linearGradient id="blu" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4FC3F7"/><stop offset="1" stop-color="#2E9BE6"/></linearGradient></defs><rect x="8" y="8" width="496" height="496" rx="116" fill="url(#nav)"/><g><path d="M406.00,256.00 L405.04,272.93 L434.33,292.35 L421.64,331.42 L386.53,329.91 L377.35,344.17 L366.63,357.30 L378.91,390.23 L345.68,414.37 L318.16,392.52 L302.35,398.66 L285.96,402.98 L276.54,436.84 L235.46,436.84 L226.04,402.98 L209.65,398.66 L193.84,392.52 L166.32,414.37 L133.09,390.23 L145.37,357.30 L134.65,344.17 L125.47,329.91 L90.36,331.42 L77.67,292.35 L106.96,272.93 L106.00,256.00 L106.96,239.07 L77.67,219.65 L90.36,180.58 L125.47,182.09 L134.65,167.83 L145.37,154.70 L133.09,121.77 L166.32,97.63 L193.84,119.48 L209.65,113.34 L226.04,109.02 L235.46,75.16 L276.54,75.16 L285.96,109.02 L302.35,113.34 L318.16,119.48 L345.68,97.63 L378.91,121.77 L366.63,154.70 L377.35,167.83 L386.53,182.09 L421.64,180.58 L434.33,219.65 L405.04,239.07 Z" fill="url(#blu)"/></g><circle cx="256" cy="256" r="120" fill="#0A2540"/><circle cx="256" cy="256" r="120" fill="none" stroke="url(#blu)" stroke-width="6" opacity="0.35"/><g fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"><polyline points="212,214 176,256 212,298"/><polyline points="300,214 336,256 300,298"/><line x1="284" y1="200" x2="228" y2="312" stroke="#4FC3F7"/></g></svg>`;
+      var lm = document.getElementById("logoMark");
+      if (lm) lm.innerHTML = LOGO;
+      var lm2 = document.getElementById("logoMark2");
+      if (lm2) {
+        lm2.innerHTML = LOGO;
+        lm2.style.width = "40px";
+        lm2.style.height = "40px";
+      }
+    </script>
+  </body>
+</html>
